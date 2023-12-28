@@ -1,5 +1,5 @@
-module Lib(mHead) where
+module Lib(safeHead) where
 
-mHead :: [a] -> Maybe a
-mHead []        = Nothing
-mHead (x:xs)    = Just x
+safeHead :: [a] -> Maybe a
+safeHead []        = Nothing
+safeHead (x:xs)    = Just x
